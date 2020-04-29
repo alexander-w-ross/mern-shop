@@ -17,10 +17,19 @@ export default function (state = initialState, action) {
         ...state,
       };
 
-    case actionTypes.DELETE_ITEMS:
+    case actionTypes.DELETE_ITEM:
       return {
         ...state,
         items: state.items.filter((item) => item.id !== action.payload),
+      };
+
+    case actionTypes.ADD_ITEM:
+      return {
+        ...state,
+        // add to end of list
+        items: [...state.items, action.payload],
+        // add it to start of list
+        // items: [action.payload, ...state.items]
       };
     default:
       return state;

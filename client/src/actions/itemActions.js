@@ -9,7 +9,15 @@ export const getItems = () => {
 export const deleteItem = (id) => {
   return {
     // returns to reducer
-    type: actionTypes.DELETE_ITEMS,
+    type: actionTypes.DELETE_ITEM,
     payload: id,
+  };
+};
+
+export const addItem = (item) => {
+  return {
+    // returns to reducer
+    type: actionTypes.ADD_ITEM,
+    payload: item,
   };
 };
