@@ -23,7 +23,7 @@ const AppNavBar = (props) => {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="https://github.com/alexander-w-ross/">
+                <NavLink href="https://github.com/alexander-w-ross/mern-shop">
                   GitHub
                 </NavLink>
               </NavItem>
